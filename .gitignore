@@ -1,0 +1,13 @@
+__pycache__/
+.vscode/
+
+*.py[cod]
+.venv/
+
+datasets/
+outputs/
+weights/
+docs/
+tests/
+*.pth
+!models/decoder.pth

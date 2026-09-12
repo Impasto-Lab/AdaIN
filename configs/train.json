@@ -1,0 +1,20 @@
+{
+  "content_dir": "E:/Datasets/UnsplashLite/images",
+  "style_dir": "E:/Datasets/ArtBench/images",
+  "vgg_path": "models/vgg_normalised.pth",
+  "output_dir": "outputs/runs/adain",
+  "device": "auto",
+  "seed": 42,
+  "batch_size": 16,
+  "resize_size": 512,
+  "crop_size": 256,
+  "num_workers": 0,
+  "max_steps": 160000,
+  "learning_rate": 0.0001,
+  "learning_rate_decay": 0.00005,
+  "style_weight": 10.0,
+  "validation_fraction": 0.05,
+  "log_every": 100,
+  "save_every": 2000,
+  "preview_every": 1000
+}
