@@ -167,6 +167,8 @@ The defaults reproduce the paper's primary inference configuration with `relu4_1
 
 ## Training
 
+We use [Unsplash Lite](https://github.com/unsplash/datasets) for content images and [ArtBench-10](https://github.com/liaopeiyuan/artbench) for style images.
+
 To train the decoder from scratch on unpaired content and style datasets:
 
 ```bash
