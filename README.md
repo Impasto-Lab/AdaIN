@@ -175,9 +175,11 @@ To train the decoder from scratch on unpaired content and style datasets:
 # Standard training for 160,000 steps
 python train.py --content-dir /path/to/content --style-dir /path/to/style
 
-# Resume interrupted training from checkpoint
+# Resume interrupted training; all settings are restored from the checkpoint
 python train.py --resume outputs/runs/adain/latest.pt
 ```
+
+When resuming, only run-time settings (`--max-steps`, `--output-dir`, `--device`, `--num-workers` and the logging/saving intervals) can be overridden.
 
 Key training parameters configured in `configs/train.json` or overridden via CLI:
 

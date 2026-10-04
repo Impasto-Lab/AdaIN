@@ -1,8 +1,9 @@
+"""Seeding and RNG state capture for exactly resumable training."""
 import torch
 
 
 def seed_everything(seed):
-    # Sampling and cropping use torch RNG; manual_seed also seeds CUDA devices.
+    # All randomness (sampling, cropping, decoder init) uses torch; this also seeds CUDA.
     torch.manual_seed(seed)
 
 
